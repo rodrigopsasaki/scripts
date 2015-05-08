@@ -19,6 +19,7 @@ if [ $GIT_IS_AVAILABLE -eq 0 ]; then
   #Aliases
   git config --global alias.pushcheck 'push --recurse-submodules=check'
   git config --global alias.pushall 'push --recurse-submodules=on-demand'
+  git config --global alias.pushtags 'push --tags'
   git config --global alias.s 'status -s'
   git config --global alias.lg 'log --oneline --decorate --all --graph'
 
