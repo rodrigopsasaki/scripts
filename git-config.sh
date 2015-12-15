@@ -8,8 +8,8 @@ if [ $GIT_IS_AVAILABLE -eq 0 ]; then
   git config --system core.autocrlf input
 
   #User info
-  git config --global user.name 'Rodrigo Sasaki'
-  git config --global user.email 'rodrigopsasaki@gmail.com'
+  git config --global user.name 'Your Name'
+  git config --global user.email 'your@email.com'
 
   #Push/Pull and Conflicts
   git config --global push.default simple
