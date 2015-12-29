@@ -27,9 +27,11 @@ if [ $GIT_IS_AVAILABLE -eq 0 ]; then
   git config --global credential.helper 'cache --timeout=86400'
 
   echo 'Git configurations added successfully'
+  exit 0
 
 else
 
   echo 'Git needs to be installed in order to run this script, check how to install it based on your OS'
+  exit 1
 
 fi
