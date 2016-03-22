@@ -1,0 +1,44 @@
+##Install pip
+
+$ sudo apt-get install python-setuptools python-dev build-essential 
+$ sudo easy_install pip 
+$ sudo pip install --upgrade virtualenv 
+$ pip install --user powerline-status
+$ pip install --user git+git://github.com/powerline/powerline
+
+
+##Install fonts
+
+$ wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+$ wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+$ mv PowerlineSymbols.otf ~/.fonts/
+$ mv 10-powerline-symbols.conf ~/.fonts/
+$ fc-cache -vf ~/.fonts/
+
+
+##Install Theme
+
+- Download the theme http://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme
+- Put the file bullet-train.zsh-theme in $ZSH_CUSTOM/themes/
+- Configure the theme in your ~/.zshrc file:
+	#ZSH_THEME="bullet-train"
+
+##Install Solarized scheme
+$ git clone https://github.com/coolwanglu/guake-colors-solarized.git
+$ cd guake-colors-solarized
+$ ./setup.sh
+
+
+##Rios's Color scheme
+
+#dir's
+BULLETTRAIN_DIR_BG="blue"
+BULLETTRAIN_DIR_FG="black"
+
+#user context
+BULLETTRAIN_CONTEXT_SHOW="true"
+BULLETTRAIN_CONTEXT_BG="cyan"
+BULLETTRAIN_CONTEXT_FG="black"
+
+#git
+BULLETTRAIN_GIT_COLORIZE_DIRTY="true"
